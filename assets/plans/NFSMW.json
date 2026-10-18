@@ -1,0 +1,1321 @@
+{
+ "schema": 1,
+ "game": "NFSMW",
+ "title": "Need for Speed: Most Wanted (2005)",
+ "release": "1.3",
+ "prefix": "nfs-blackbox",
+ "_about": [
+  "Most Wanted 1.3 with the quality-of-life mods: the DRM-free exe with the frame-limiter and",
+  "large-address-aware patches, the ASI loader, XtendedInput (DualSense, PlayStation prompts), the",
+  "Widescreen Fix (motion blur off), HUD Adapter, DSOAL (EAX audio) and the console keyboard.",
+  "prospero-win's own DXVK draws it.",
+  "Every file is pinned by SHA-256 and taken from mods-cache/<sha256>[.ext]; the edited files are",
+  "checked against the console's own (expect)."
+ ],
+ "sources": {
+  "speed-exe": {
+   "name": "speed.exe 1.3, DRM-free (the *!ReLOADeD!* build; nfs-blackbox-ps5: profiles/nfsmw/built/speed.exe)",
+   "sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+   "size": 6029312
+  },
+  "asi-loader": {
+   "name": "Ultimate ASI Loader 9.7.4 (ThirteenAG)",
+   "sha256": "952cebfc30d525afc2bdbaca954329d405ded3aa688a83027354dae14dfd5c5f",
+   "size": 3910913,
+   "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v9.7.4/Ultimate-ASI-Loader.zip"
+  },
+  "xtendedinput": {
+   "name": "NFS-XtendedInput 1.22 for Most Wanted (xan1242)",
+   "sha256": "a78fbf5a2ba672557b23d7633175f391563a264c064762b2b50df88fb1a57fd0",
+   "size": 1520654,
+   "url": "https://github.com/xan1242/NFS-XtendedInput/releases/download/1.22/Release-MW-Pack.zip"
+  },
+  "widescreenfix": {
+   "name": "Most Wanted Widescreen Fix, build of 2026-09-12 (ThirteenAG)",
+   "sha256": "7be912197ac19134d5a64dfe61225e4ef85d612c4f64b96045727c3bf6735df4",
+   "size": 8911715,
+   "url": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/nfsmw/NFSMostWanted.WidescreenFix.zip"
+  },
+  "hud-adapter": {
+   "name": "NFSMW HUD Adapter 1.0.0.800 (nlgzrgn)",
+   "sha256": "d0c034879a797bbf095e1cd679ae5ac3701089cb547ca77292fed6ad7270a69b",
+   "size": 42211,
+   "url": "https://nfsmods.xyz/uploads/mods/638/658865-NFSMW%20HUD%20Adapter%20v1.0.0.800.zip"
+  },
+  "dsoal": {
+   "name": "DSOAL r648 (kcat): DSOAL_r648.zip, from inside DSOAL.zip on github.com/kcat/dsoal/releases/tag/r648 (nfs-blackbox-ps5: mods/dsoal/DSOAL.zip)",
+   "sha256": "5b4e47671dea3f9882f3686f9fd5c3a111dcd57c8170dd5bfe0f5a5f18e31966",
+   "size": 6844446
+  },
+  "console-keyboard": {
+   "name": "NFSMWConsoleKeyboard.asi v1.1 (lavavex/NFSMW-ConsoleKeyboard, built by GitHub Actions)",
+   "sha256": "b65b1c745c32cfc7fb9b6ad41eeb3487e0649068731a29273d8e6006b5b9d1ec",
+   "size": 45568,
+   "url": "https://github.com/lavavex/NFSMW-ConsoleKeyboard/releases/download/v1.1/NFSMWConsoleKeyboard.asi"
+  },
+  "ps5-settings-mod": {
+   "name": "PS5SettingsMod.asi (nfs-blackbox-ps5 mods/ps5-settings-mod, built by tools/build-settings-mod.sh)",
+   "sha256": "52062460a0859be0a8fe63b63f6d23d13aab48c82d76309638b1d031467d9fb8",
+   "size": 52224
+  },
+  "upgrade-1.2": {
+   "name": "Most Wanted 1.2 to 1.3 diff (nfs-blackbox-ps5: profiles/nfsmw/nfsmw-1.2-to-1.3.zip): put it in mods-cache by hand",
+   "sha256": "0f5fbec150678eb45bef7630b96e09b6255f21b1f1f2dfd85a776a7d2283969d",
+   "size": 2327632
+  },
+  "nfsmw-x360-stuff-pack-4.2": {
+   "name": "Xbox 360 Stuff Pack 4.2 (nfsmw-x360-stuff-pack-4.2.zip, repacked from Google Drive by nfs-blackbox-ps5 tools/make-x360-assets.py)",
+   "sha256": "885d28e1ee3931d13949617750158660ae2213a1813adc663fef81bf729f1f3d",
+   "size": 1495687165,
+   "url": "https://github.com/lavavex/nfs-blackbox-assets/releases/download/nfsmw-x360-1/nfsmw-x360-stuff-pack-4.2.zip"
+  },
+  "nfsmw-x360-movies-1": {
+   "name": "Xbox 360 Converted Movies (nfsmw-x360-movies-1.zip, repacked from Google Drive by nfs-blackbox-ps5 tools/make-x360-assets.py)",
+   "sha256": "4678a43553c887eb27283b3e822d29474a5ebe4e84421551cd351337d440e231",
+   "size": 1831439018,
+   "url": "https://github.com/lavavex/nfs-blackbox-assets/releases/download/nfsmw-x360-1/nfsmw-x360-movies-1.zip"
+  },
+  "nfsmw-x360-movies-2": {
+   "name": "Xbox 360 Converted Movies (nfsmw-x360-movies-2.zip, repacked from Google Drive by nfs-blackbox-ps5 tools/make-x360-assets.py)",
+   "sha256": "b43b63bdf06e1c599bfd5f6928913dd01443ea4efbcf7379da3bb31eea7c1763",
+   "size": 315890574,
+   "url": "https://github.com/lavavex/nfs-blackbox-assets/releases/download/nfsmw-x360-1/nfsmw-x360-movies-2.zip"
+  },
+  "hd-content-support": {
+   "name": "NFS HD Content Support (Aero_)",
+   "sha256": "60c900a8f01b12ab79625194833a83feb64c1caee07b8177c8d356ae587d5197",
+   "size": 527322,
+   "url": "https://nfsmods.xyz/uploads/mods/2151/4c35cb-NFS%20HD%20Content%20Support.zip"
+  },
+  "fe-shadows": {
+   "name": "NFSMW Front-End Shadows (Aero_)",
+   "sha256": "97c9980d0237250d66d39311930a595f7938cc0b84c7112b82deebfa06e90ac5",
+   "size": 996309,
+   "url": "https://nfsmods.xyz/uploads/mods/3005/9cbcd3-NFSMWFEShadows.zip"
+  },
+  "hd-reflections": {
+   "name": "NFS HD Reflections (Aero_)",
+   "sha256": "daaa6aefd4b0918fb8adaadcd80a4cc4322d8063270a31aeb3f75e07de386d78",
+   "size": 636650,
+   "url": "https://nfsmods.xyz/uploads/mods/3363/a486f3-NFS%20HD%20Reflections.zip"
+  },
+  "async-luminance": {
+   "name": "X360StuffAsyncLuminance.asi (nfs-blackbox-ps5, built by tools/build-x360-bits.sh)",
+   "sha256": "98f7b9338ecf038ec623df128e00ad8e94dbea3d9908b394fc36cd12352b46fa",
+   "size": 43520
+  },
+  "d3dx9_26": {
+   "name": "d3dx9_26.dll (x86, Microsoft DirectX June 2010 redistributable; nfs-blackbox-ps5 tools/build-x360-bits.sh)",
+   "sha256": "8ea96fe01c3c86a36fcb3795ae03eb12034003e335ef475571efaeda17c5bc78",
+   "size": 2297552
+  },
+  "d3dx9_43": {
+   "name": "d3dx9_43.dll (x86, Microsoft DirectX June 2010 redistributable; nfs-blackbox-ps5 tools/build-x360-bits.sh)",
+   "sha256": "0b28546be22c71834501f7d7185ede5d79742457331c7ee09efc14490dd64f5f",
+   "size": 1998168
+  }
+ },
+ "game_files": [
+  {
+   "source": "speed-exe",
+   "to": "speed.exe"
+  },
+  {
+   "source": "asi-loader",
+   "to": "dinput8.dll",
+   "member": "dinput8.dll"
+  },
+  {
+   "source": "xtendedinput",
+   "to": "scripts/",
+   "member": "scripts/"
+  },
+  {
+   "source": "xtendedinput",
+   "to": "GLOBAL/",
+   "member": "GLOBAL/"
+  },
+  {
+   "source": "widescreenfix",
+   "to": "scripts/",
+   "member": "scripts/"
+  },
+  {
+   "source": "hud-adapter",
+   "to": "scripts/NFSMWHUDAdapter.asi",
+   "member": "scripts/NFSMWHUDAdapter.asi"
+  },
+  {
+   "source": "dsoal",
+   "to": "dsound.dll",
+   "member": "DSOAL/Win32/dsound.dll"
+  },
+  {
+   "source": "dsoal",
+   "to": "dsoal-aldrv.dll",
+   "member": "DSOAL/Win32/dsoal-aldrv.dll"
+  },
+  {
+   "source": "dsoal",
+   "to": "alsoft.ini",
+   "member": "DSOAL/Win32/alsoft.ini"
+  },
+  {
+   "source": "console-keyboard",
+   "to": "scripts/NFSMWConsoleKeyboard.asi"
+  },
+  {
+   "source": "ps5-settings-mod",
+   "to": "scripts/PS5SettingsMod.asi"
+  }
+ ],
+ "system_files": [],
+ "patches": [
+  {
+   "file": "speed.exe",
+   "offset": 2371282,
+   "from": "e829a00000",
+   "to": "9090909090",
+   "_why": "the frame limiter's call"
+  },
+  {
+   "file": "speed.exe",
+   "offset": 286,
+   "from": "0f",
+   "to": "2f",
+   "_why": "large address aware"
+  }
+ ],
+ "ini": [
+  {
+   "file": "scripts/NFS_XtendedInput.ini",
+   "values": {
+    "UseWin32Cursor": "1",
+    "UseCustomCursor": "0",
+    "EnableMouseHiding": "1",
+    "ControllerIconMode": "1",
+    "FirstControlDevice": "1"
+   }
+  },
+  {
+   "file": "scripts/NFSMostWanted.WidescreenFix.ini",
+   "lf": true,
+   "values": {
+    "FixHUD": "0",
+    "Scaling": "0",
+    "FMVWidescreenMode": "0",
+    "SkipIntro": "0",
+    "ImproveGamepadSupport": "3",
+    "ImproveShadowLOD": "0",
+    "AutoScaleShadowsRes": "0",
+    "DisableMotionBlur": "1",
+    "ConsoleGamma": "2",
+    "SMAA": "1"
+   }
+  }
+ ],
+ "texts": [
+  {
+   "to": "dxvk.conf",
+   "body": "# NFS Most Wanted — DXVK 3.1.1\n# The 360 pack rewrites dynamic buffers the GPU may still be reading; cached\n# CPU-side copies keep those locks from waiting on the GPU.\nd3d9.cachedDynamicBuffers = True\n"
+  },
+  {
+   "to": "alsoft.ini",
+   "body": "\n# prospero-win: the PS5 port takes 48 kHz stereo; a deeper buffer than the default 3 x 1024 for the console's coarser thread wake-ups.\n[general]\nchannels = stereo\nfrequency = 48000\nperiod_size = 1024\nperiods = 4\nhrtf = false\n",
+   "append": true
+  }
+ ],
+ "expect": {
+  "speed.exe": "fe3e406617afd5457b51263257fca22bd93cfd29f8ec702d8b8f6c83ea93cc48",
+  "dxvk.conf": "6cc5e983a3a49a683304421f3730b76134154ac97994210466bc338575776418",
+  "alsoft.ini": "8095d96846443b30759ba5618d0ce76e8b0ccfd8d2ec7fa971e165fae90d2f6c",
+  "scripts/NFSMostWanted.WidescreenFix.ini": "2dbdfd7c3c65acaff9a5839ee08845e91e990b9216765c448e2f3d02e3ca03e6"
+ },
+ "registry": {
+  "machine": [
+   {
+    "key": "Software\\Wow6432Node\\EA Games\\Need for Speed Most Wanted",
+    "name": "CD Drive",
+    "string": "C:\\Games\\NFSMW\\"
+   },
+   {
+    "key": "Software\\Wow6432Node\\EA Games\\Need for Speed Most Wanted",
+    "name": "DisplayName",
+    "string": "Need for Speed Most Wanted"
+   },
+   {
+    "key": "Software\\Wow6432Node\\EA Games\\Need for Speed Most Wanted",
+    "name": "Install Dir",
+    "string": "C:\\Games\\NFSMW\\"
+   },
+   {
+    "key": "Software\\Wow6432Node\\EA Games\\Need for Speed Most Wanted",
+    "name": "Product GUID",
+    "string": "{A48B9CD8-C2BA-4EC9-0081-7260D238C7CF}"
+   }
+  ],
+  "user": [
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "CacheSize",
+    "dword": 2936691712
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "CD Drive",
+    "string": "D:\\"
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "FirstTime",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_CarEnvironmentMapEnable",
+    "dword": 2
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_CarEnvironmentMapUpdateData",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_CarLodLevel",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_FSAALevel",
+    "dword": 0
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_MotionBlurEnable",
+    "dword": 0
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_OverBrightEnable",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_ParticleSystemEnable",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_PerformanceLevel",
+    "dword": 5
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_RacingResolution",
+    "dword": 2399144048
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_RainEnable",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_RoadReflectionEnable",
+    "dword": 3
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_ShadowDetail",
+    "dword": 2
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_TextureFiltering",
+    "dword": 2
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_VisualTreatment",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_VSyncOn",
+    "dword": 0
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "g_WorldLodLevel",
+    "dword": 3
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "Install Dir",
+    "string": "C:\\Games\\NFSMW\\"
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "InstallDir",
+    "string": "C:\\Games\\NFSMW\\"
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "Language",
+    "string": "English US"
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "Path",
+    "string": "C:\\Games\\NFSMW\\"
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "SIZE",
+    "dword": 132
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "StreamingInstall",
+    "dword": 0
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "SwapSize",
+    "dword": 73400320
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "VERSION",
+    "dword": 1
+   },
+   {
+    "key": "Software\\EA Games\\Need for Speed Most Wanted",
+    "name": "VTMode",
+    "dword": 0
+   }
+  ]
+ },
+ "profile": {
+  "id": "pb-nfsmw",
+  "name": "NFS Most Wanted",
+  "executable": "C:\\Games\\NFSMW\\speed.exe",
+  "working_directory": "C:\\Games\\NFSMW",
+  "dll_overrides": "d3d8,d3d9,d3d10core,d3d11,dxgi=n;dinput8,dsound=n,b",
+  "width": 3840,
+  "height": 2160,
+  "runtime": {
+   "fast_clock": "true",
+   "shared_input": "true",
+   "thread_scheduling": "true"
+  },
+  "after": "nfs-most-wanted-2005.profile"
+ },
+ "pending": [],
+ "touchpad": {
+  "ini": [
+   {
+    "file": "scripts/NFS_XtendedInput.ini",
+    "values": {
+     "UseWin32Cursor": "0"
+    }
+   }
+  ]
+ },
+ "options": [
+  {
+   "id": "x360",
+   "title": "Xbox 360 graphics",
+   "description": "The Xbox 360 look: the X360 Stuff Pack 4.2 (no glass shader, which smears under DXVK), the converted Xbox 360 movies, HD Content Support, Front-End Shadows, HD Reflections, native D3DX and an async-luminance fix. About 3.7 GB more to download.",
+   "default": false,
+   "game_files": [
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/FrontB.lzc",
+     "member": "FRONTEND/FrontB.lzc"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/PLATFORMS/CAREER_SAFEHOUSE.BIN",
+     "member": "FRONTEND/PLATFORMS/CAREER_SAFEHOUSE.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/PLATFORMS/CAR_LOT.BIN",
+     "member": "FRONTEND/PLATFORMS/CAR_LOT.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/PLATFORMS/CUSTOMIZATION_SHOP.BIN",
+     "member": "FRONTEND/PLATFORMS/CUSTOMIZATION_SHOP.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/PLATFORMS/CUSTOMIZATION_SHOP_BACKROOM.BIN",
+     "member": "FRONTEND/PLATFORMS/CUSTOMIZATION_SHOP_BACKROOM.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FRONTEND/PLATFORMS/PlatformCrib.BIN",
+     "member": "FRONTEND/PLATFORMS/PlatformCrib.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/car.fx.o",
+     "member": "FX/COMPILED/car.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/carnormalmap.fx.o",
+     "member": "FX/COMPILED/carnormalmap.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/debugPoly.fx.o",
+     "member": "FX/COMPILED/debugPoly.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/grass.fx.o",
+     "member": "FX/COMPILED/grass.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/hdr.fx.o",
+     "member": "FX/COMPILED/hdr.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/particles.fx.o",
+     "member": "FX/COMPILED/particles.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/shadowscreenfilter.fx.o",
+     "member": "FX/COMPILED/shadowscreenfilter.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/shadowvolume.fx.o",
+     "member": "FX/COMPILED/shadowvolume.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/sky.fx.o",
+     "member": "FX/COMPILED/sky.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/standard.fx.o",
+     "member": "FX/COMPILED/standard.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/trees.fx.o",
+     "member": "FX/COMPILED/trees.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/visualtreatment.fx.o",
+     "member": "FX/COMPILED/visualtreatment.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/waterseashader.fx.o",
+     "member": "FX/COMPILED/waterseashader.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/world.fx.o",
+     "member": "FX/COMPILED/world.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/worldbone.fx.o",
+     "member": "FX/COMPILED/worldbone.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/worldnormalmap.fx.o",
+     "member": "FX/COMPILED/worldnormalmap.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "FX/COMPILED/worldreflect.fx.o",
+     "member": "FX/COMPILED/worldreflect.fx.o"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/DYNTEX.BIN",
+     "member": "GLOBAL/DYNTEX.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/GlobalB.lzc",
+     "member": "GLOBAL/GlobalB.lzc"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/GlobalMemoryFile.bin",
+     "member": "GLOBAL/GlobalMemoryFile.bin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/HUDTEXRACE.BIN",
+     "member": "GLOBAL/HUDTEXRACE.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/HUDTEXTURESPHOTOFINISH.BIN",
+     "member": "GLOBAL/HUDTEXTURESPHOTOFINISH.BIN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/InGameA.bun",
+     "member": "GLOBAL/InGameA.bun"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/InGameB.lzc",
+     "member": "GLOBAL/InGameB.lzc"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "GLOBAL/attributes.bin",
+     "member": "GLOBAL/attributes.bin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_350Z_01d_shrt2.gin",
+     "member": "SOUND/ENGINE/GIN_350Z_01d_shrt2.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_350Z_Jason_shrt2.gin",
+     "member": "SOUND/ENGINE/GIN_350Z_Jason_shrt2.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Audi_S4.gin",
+     "member": "SOUND/ENGINE/GIN_Audi_S4.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Audi_S4_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Audi_S4_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_328i_e46_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_328i_e46_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_450i_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_450i_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_LagSeca.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_LagSeca.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_LagSeca_V2.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_LagSeca_V2.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_Silver.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_Silver.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_Silver_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_Silver_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_race.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_race.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_race_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_race_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_BMW_M3_white_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_BMW_M3_white_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Bronco_Comp.gin",
+     "member": "SOUND/ENGINE/GIN_Bronco_Comp.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Bronco_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Bronco_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Cavel_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Cavel_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Cavel_v1_Base.gin",
+     "member": "SOUND/ENGINE/GIN_Cavel_v1_Base.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Cavel_v1_Lev1.gin",
+     "member": "SOUND/ENGINE/GIN_Cavel_v1_Lev1.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Corv_z06_dyn.gin",
+     "member": "SOUND/ENGINE/GIN_Corv_z06_dyn.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Corvette_Z06.gin",
+     "member": "SOUND/ENGINE/GIN_Corvette_Z06.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Corvette_Z06_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Corvette_Z06_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_DB9.gin",
+     "member": "SOUND/ENGINE/GIN_DB9.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_DB9_upgrd.gin",
+     "member": "SOUND/ENGINE/GIN_DB9_upgrd.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_DB9_upgrd_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_DB9_upgrd_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Diablo.gin",
+     "member": "SOUND/ENGINE/GIN_Diablo.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Eclip2000_v1_CD.gin",
+     "member": "SOUND/ENGINE/GIN_Eclip2000_v1_CD.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Eclipse_2000_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Eclipse_2000_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Eclipse_5Zigen.gin",
+     "member": "SOUND/ENGINE/GIN_Eclipse_5Zigen.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_FordFocus_Road.gin",
+     "member": "SOUND/ENGINE/GIN_FordFocus_Road.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_FordFocus_comp2.gin",
+     "member": "SOUND/ENGINE/GIN_FordFocus_comp2.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Ford_Focus2_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Ford_Focus2_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_GTO_65_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_GTO_65_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_GTi_Pull_01b_shrt.gin",
+     "member": "SOUND/ENGINE/GIN_GTi_Pull_01b_shrt.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Gallardo_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Gallardo_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_HondaS2000_Church.gin",
+     "member": "SOUND/ENGINE/GIN_HondaS2000_Church.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Honda_Prelude.gin",
+     "member": "SOUND/ENGINE/GIN_Honda_Prelude.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Honda_Prelude_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Honda_Prelude_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Honda_S2000_5zigen_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Honda_S2000_5zigen_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Honda_S2000_Spugen_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Honda_S2000_Spugen_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_ITR_Pull_01cc_shrt.gin",
+     "member": "SOUND/ENGINE/GIN_ITR_Pull_01cc_shrt.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Infinit_G35_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Infinit_G35_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Lotus_Elise.gin",
+     "member": "SOUND/ENGINE/GIN_Lotus_Elise.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_MBZ_SL65.gin",
+     "member": "SOUND/ENGINE/GIN_MBZ_SL65.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mazda_RX7.gin",
+     "member": "SOUND/ENGINE/GIN_Mazda_RX7.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mazda_RX8_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Mazda_RX8_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_MitsEclipse_2000.gin",
+     "member": "SOUND/ENGINE/GIN_MitsEclipse_2000.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mits_5zigen_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Mits_5zigen_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Murcielago.gin",
+     "member": "SOUND/ENGINE/GIN_Murcielago.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Murcielago_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Murcielago_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_MustSal_Ramp_V2_CD.gin",
+     "member": "SOUND/ENGINE/GIN_MustSal_Ramp_V2_CD.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mustang_Drag.gin",
+     "member": "SOUND/ENGINE/GIN_Mustang_Drag.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mustang_Drag_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Mustang_Drag_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mustang_GT_A.gin",
+     "member": "SOUND/ENGINE/GIN_Mustang_GT_A.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mustang_GT_A_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Mustang_GT_A_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Mustang_Nscr_COMP.gin",
+     "member": "SOUND/ENGINE/GIN_Mustang_Nscr_COMP.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Nascar_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Nascar_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Nissan_Skyline.gin",
+     "member": "SOUND/ENGINE/GIN_Nissan_Skyline.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_911_RSR_orange.gin",
+     "member": "SOUND/ENGINE/GIN_POR_911_RSR_orange.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_911_RSR_orange_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_POR_911_RSR_orange_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_928.gin",
+     "member": "SOUND/ENGINE/GIN_POR_928.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_928_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_POR_928_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_928_V8.gin",
+     "member": "SOUND/ENGINE/GIN_POR_928_V8.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_Carrera_GT_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_POR_Carrera_GT_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_POR_DP6.gin",
+     "member": "SOUND/ENGINE/GIN_POR_DP6.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Protege_Ramp_Lev2_CD.gin",
+     "member": "SOUND/ENGINE/GIN_Protege_Ramp_Lev2_CD.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Protege_Ramp_V2_CD.gin",
+     "member": "SOUND/ENGINE/GIN_Protege_Ramp_V2_CD.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_RX8_Ramp_v1_CD.gin",
+     "member": "SOUND/ENGINE/GIN_RX8_Ramp_v1_CD.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_S2000_Church_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_S2000_Church_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_TRCK_Accel.gin",
+     "member": "SOUND/ENGINE/GIN_TRCK_Accel.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_TRCK_Decel.gin",
+     "member": "SOUND/ENGINE/GIN_TRCK_Decel.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_TVR_Tuscan.gin",
+     "member": "SOUND/ENGINE/GIN_TVR_Tuscan.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Toyota_GTS.gin",
+     "member": "SOUND/ENGINE/GIN_Toyota_GTS.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Toyota_GTS_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Toyota_GTS_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_VR6_Jetta_M3.gin",
+     "member": "SOUND/ENGINE/GIN_VR6_Jetta_M3.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_VR6_Jetta_M4.gin",
+     "member": "SOUND/ENGINE/GIN_VR6_Jetta_M4.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_VW_Cab_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_VW_Cab_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_VW_Cabriolet.gin",
+     "member": "SOUND/ENGINE/GIN_VW_Cabriolet.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_VW_Scirocco.gin",
+     "member": "SOUND/ENGINE/GIN_VW_Scirocco.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Viper_A.gin",
+     "member": "SOUND/ENGINE/GIN_Viper_A.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Viper_A_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Viper_A_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Viper_B.gin",
+     "member": "SOUND/ENGINE/GIN_Viper_B.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_Viper_B_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_Viper_B_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_WRX2F2F_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_WRX2F2F_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_WRXSTi_Pull_09.gin",
+     "member": "SOUND/ENGINE/GIN_WRXSTi_Pull_09.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_WRX_2F2F.gin",
+     "member": "SOUND/ENGINE/GIN_WRX_2F2F.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_WRX_STi_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_WRX_STi_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/ENGINE/GIN_WRX_Street_DCL.gin",
+     "member": "SOUND/ENGINE/GIN_WRX_Street_DCL.gin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/PFDATA/MW_Music.mpf",
+     "member": "SOUND/PFDATA/MW_Music.mpf"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "SOUND/PFDATA/MW_Music.mus",
+     "member": "SOUND/PFDATA/MW_Music.mus"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "TRACKS/STREAML2RA.BUN",
+     "member": "TRACKS/STREAML2RA.BUN"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "TRACKS/TexWizardX360/meta.json",
+     "member": "TRACKS/TexWizardX360/meta.json"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "TRACKS/TexWizardX360/textures.bin",
+     "member": "TRACKS/TexWizardX360/textures.bin"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/NFSMW_XenonEffects.asi",
+     "member": "scripts/NFSMW_XenonEffects.asi"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/NFSMW_XenonEffects.ini",
+     "member": "scripts/NFSMW_XenonEffects.ini"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/TexWizard.asi",
+     "member": "scripts/TexWizard.asi"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/TexWizard.json",
+     "member": "scripts/TexWizard.json"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/X360Stuff.asi",
+     "member": "scripts/X360Stuff.asi"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/X360Stuff.ini",
+     "member": "scripts/X360Stuff.ini"
+    },
+    {
+     "source": "nfsmw-x360-stuff-pack-4.2",
+     "to": "scripts/XenonEffects.tpk",
+     "member": "scripts/XenonEffects.tpk"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/attract_movie_english_ntsc.vp6",
+     "member": "MOVIES/attract_movie_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_01_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_01_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_02_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_02_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_03_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_03_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_04_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_04_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_05_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_05_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_06_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_06_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_07_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_07_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_08_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_08_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_09_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_09_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_10_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_10_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_11_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_11_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_12_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_12_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_13_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_13_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_14_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_14_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/blacklist_15_english_ntsc.vp6",
+     "member": "MOVIES/blacklist_15_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/bounty_tutorial_english_ntsc.vp6",
+     "member": "MOVIES/bounty_tutorial_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/drag_tutorial_english_ntsc.vp6",
+     "member": "MOVIES/drag_tutorial_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/eahd_bumper_english_ntsc.vp6",
+     "member": "MOVIES/eahd_bumper_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/ealogo_english_ntsc.vp6",
+     "member": "MOVIES/ealogo_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/psa_english_ntsc.vp6",
+     "member": "MOVIES/psa_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/pursuit_tutorial_english_ntsc.vp6",
+     "member": "MOVIES/pursuit_tutorial_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/speedtrap_tutorial_english_ntsc.vp6",
+     "member": "MOVIES/speedtrap_tutorial_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_bla134_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_bla134_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_bus12_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_bus12_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_cro06_coh06a_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_cro06_coh06a_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_her136_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_her136_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_pin11_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_pin11_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_rac01_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_rac01_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-1",
+     "to": "MOVIES/storyfmv_rap30_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_rap30_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-2",
+     "to": "MOVIES/storyfmv_raz08_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_raz08_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-2",
+     "to": "MOVIES/storyfmv_saf25_english_ntsc.vp6",
+     "member": "MOVIES/storyfmv_saf25_english_ntsc.vp6"
+    },
+    {
+     "source": "nfsmw-x360-movies-2",
+     "to": "MOVIES/tollbooth_tutorial_english_ntsc.vp6",
+     "member": "MOVIES/tollbooth_tutorial_english_ntsc.vp6"
+    },
+    {
+     "source": "hd-content-support",
+     "to": "scripts/NFSMWHDContentSupport.asi",
+     "member": "NFS HD Content Support/NFSMWHDContentSupport/scripts/NFSMWHDContentSupport.asi"
+    },
+    {
+     "source": "fe-shadows",
+     "to": "scripts/NFSMWFEShadows.asi",
+     "member": "NFSMWFEShadows/scripts/NFSMWFEShadows.asi"
+    },
+    {
+     "source": "fe-shadows",
+     "to": "scripts/NFSMWFEShadows.ini",
+     "member": "NFSMWFEShadows/scripts/NFSMWFEShadows.ini"
+    },
+    {
+     "source": "hd-reflections",
+     "to": "scripts/",
+     "member": "NFS HD Reflections/NFSMWHDReflections/scripts/"
+    },
+    {
+     "source": "async-luminance",
+     "to": "scripts/X360StuffAsyncLuminance.asi"
+    }
+   ],
+   "system_files": [
+    {
+     "source": "d3dx9_26",
+     "to": "syswow64/d3dx9_26.dll",
+     "keep_builtin": true
+    },
+    {
+     "source": "d3dx9_43",
+     "to": "syswow64/d3dx9_43.dll",
+     "keep_builtin": true
+    }
+   ],
+   "texts": [
+    {
+     "to": "scripts/X360Stuff.ini",
+     "body": "# 360 Stuff config\r\n\r\n[VIDEO]\r\n\r\n# Enables custom grass shader. May negatively affect performance\r\nGrassShader = 1\r\n\r\n# Enables parallax scrolling on certain surfaces. Some may prefer this to be off.\r\nDoParallax = 1\r\n\r\n# Uses car's reflection cubemap for rearview mirror.\r\n# Also enables rendering other cars into cubemap\r\nCubemapRVM = 1\r\n\r\n# For performance, Xbox 360 only renders cars into the rear cubemap face\r\n# While slow, this can yield nicer looking results in reflections\r\n# (NOTE: this option is EXPERIMENTAL and may be buggy)\r\nCarsInAllCubemapFaces = 0\r\n\r\n# Enables motion blur. Set to 2 to disable depth masking (may slightly improve performance)\r\nMotionBlur = 0\r\n\r\n# Enables depth of field in NIS cutscenes and certain game moment cameras\r\nDOF = 1\r\n\r\n# Widescreen UI mode\r\n# 0 = Auto-Detect, 1 = Force on, 2 = Force off\r\nWidescreenUIMode = 0\r\n\r\n# Disable this if you're using the original PC Movies (16:9 letterboxed to 4:3)\r\nWidescreenMovies = 1\r\n\r\n# Changes 3D scaling as it varies between various versions\r\n# (and is almost never mathematically correct leading to varying levels of stretching and squashing)\r\n# 0 = Mathematically correct, 1 = Xbox 360, 2 = PC, 3 = PS3, 4 = Original Xbox,\r\n# 5 = GameCube (NTSC), 6 = GameCube (PAL), 7 = PS2 (NTSC), 8 = PS2 (PAL)\r\n# See \"Previews\\Scaling\" for image comparisons\r\nScalingMode = 1\r\n\r\n# Changes 2D/FE scaling as it varies between various versions\r\n# 0 = Custom/Correct scale, 1 = Xbox 360 scale (in widescreen it is equivalent to 0 with 0.92 scale),\r\n# 2 = PC scale, 3 = PS3 scale, 4 = Original Xbox scale, 5 = GameCube (NTSC) scale,\r\n# 6 = GameCube (PAL) scale,  7 = PS2 (NTSC) scale, 8 = PS2 (PAL) scale\r\n# See \"Previews\\Scaling\" for image comparisons\r\nFEScalingMode = 1\r\n\r\n# Sets the scale of the UI when FEScalingMode is 0.\r\n# On Xbox and Xbox 360 in widescreen it is 0.92. On PC and PS2 it is 1.0. On PS3 it is about 0.93 in widescreen.\r\nFEScale = 1.0\r\n\r\n# Various parts of the frontend begin to fall apart as the framerate increases above 60fps.\r\n# Enabling this caps the framerate in the frontend to 60 to avoid the issues.\r\nCapFEFramerate = 1\r\n\r\n# Makes the sunsets no longer engulf the world in shadow,\r\n# hiding the shortcomings of the LiSPSM shadowmapping technique\r\n# PC hid the issues by fading them out instead.\r\nXbox360ShadowAngle = 1\r\n\r\n# Enables the built-in lite widescreen fix (EXPERIMENTAL)\r\nWidescreenFix = 0\r\n\r\n# Sets a custom resolution if widescreen fix isn't present. A value of 0 makes it autodetect the desktop resolution.\r\nXResolution = 0\r\nYResolution = 0\r\n\r\n# Enables the game's built-in unused borderless windowed mode\r\nWindowed = 0\r\n\r\n[ENHANCEMENTS]\r\n\r\n# Xbox 360 doesn't do an actual blur when downscaling for blackbloom, this fixes that\r\nNicerBlackBloom = 1\r\n\r\n# Xbox 360 doesn't do an actual blur when downscaling for DOF, this fixes that\r\nNicerDOF = 1\r\n\r\n# Xbox 360 uses a depth sorting algorithm for trees, though that doesn't always yield the best results. This forces the use of fixed rendering order values.\r\nFixedTreeRenderOrder = 1\r\n\r\n# Xbox 360 uses lowlod shader for traffic and cop cars in the main view. Enable this to use full LOD shader instead.\r\nUseFullLODShaderOnTrafficAndCops = 0\r\n\r\n# Xbox 360 sets twkTimeOfDayOvercast in NISes, but rarely ever sets it back properly, causing the weather cycle to freeze until it does\r\n# Enabling this makes the override get reset the next time you return to FE.\r\n# It also nerfs Earl's Earth-rotating powers.\r\nResetOvercastOverrideAfterNIS = 1\r\n\r\n# The Xbox 360 version limits the render distance of cubemaps (except for the rear face as it's used for RVM) to 100m. \r\n# You can extend it by setting this to a higher value\r\n# 100.0 = Xbox 360, 15000.0 = PC (same as main view, slightly overkill), 300.0 = ProStreet\r\nEnvMapFarPlane = 100.0\r\n\r\n# Same as above but for the rear face and RVM. Due to it being used for the mirror it has a bigger distance.\r\n# 400.0 = Xbox 360 (both MW and ProStreet), 15000.0 = PC (same as main view)\r\nMirrorFarPlane = 400.0\r\n\r\n# On the 360 version they tried to fix stretching at screen edges during intense motion blur by reversing its direction,\r\n# but they only did it on the Z axis making it appear incorrect diagonally. This fixes that. You can also set it to 2\r\n# to remove the fix altogether and make it more like Carbon where they also did that.\r\nFixDiagonalMotionBlur = 1\r\n\r\n[MISC]\r\n\r\n# Makes game take screenshots in PNG format instead of TGA\r\nTakePNGScreenshots = 1\r\n\r\n# Changes path that screenshots are saved to.\r\n# Example path: %UserProfile%\\Documents\\NFS Most Wanted\r\n# Defaults to My Pictures folder if path is blank or doesn't exist.\r\nPNGScreenshotPath = %UserProfile%\\Documents\\NFS Most Wanted\r\n\r\n# Sets car lighting (Shaper Light Rig) setup\r\n# 0: Xbox 360\r\n# 1: OPM\r\n# 2: E3-style\r\n# 3: vanilla PC/unmodified (use this if another mod modifies shaper lights)\r\nCarShaperLightType = 0\r\n\r\n# Allows cars to self-shadow (NOT how it's intended by devs so don't expect it to look good)\r\nCarSelfShadow = 0\r\n\r\n# Enables controller tips screen (VERY broken right now)\r\nEnableLoadingControllerScreen = 0\r\n\r\n# Controller tips texture name (_C1 suffix for analog steer, _C2 for dpad steer)\r\nLoadingControllerScreenTextureName = LOADING_CONTROLLER_X360_C1\r\n\r\n# Controls the sensitivity of the motion blur to speed\r\n# Default value is 1.0\r\nDirectionalMotionBlurStrength = 1.0\r\n\r\n# Xbox 360 has unused angular motion blur, nullified by its strength constant being set to 0\r\n# A recommended value to reenable it would be around 500\r\n# Default value is 0.0\r\nAngularMotionBlurStrength = 0.0\r\n\r\n# Allows you to change the minimum shadow projection height\r\n# 0.7 = Xbox 360, 1.0 = nearly straight down, 0.0 = can go down to horizon\r\n# NOTE: this value is approximate as it only changes the Z component of the sun direction vector\r\n# and doesn't change lighting or the sun position itself, only shadowcasting.\r\n# It's not recommended to change this value if you value accuracy.\r\nMinimumShadowAngleHeight = 0.7\r\n\r\n# Fixes time of day changes done by NISes on the 360 version.\r\n# Disabling this restores broken PC behavior.\r\nNISTimeOfDayEvent = 1\r\n\r\n# Enables the use of the current-gen/PC sun flare instead.\r\n# Only enable this if you like the bigger flare on those versions, or need compatibility with existing sun flare mods.\r\nCurrentGenSunFlare = 0\r\n\r\n# The retail Xbox 360 version uses the black bloom curve for both black bloom AND color bloom.\r\n# Enabling this restores what seems to have been early behavior, and what is the retail PC behavior.\r\n# Use this with visual treatment presets tuned for PC visual treatment.\r\nUseColourBloomCurve = 0\r\n\r\n# This value affects the brightness of exposure adaptation. It is not recommended to be changed from the Xbox 360 default of 0.14.\r\n# Set this to 0.19 for (roughly) PC-equivalent brightness, which is best paired with the option above.\r\n# NOTE: NISes have the ability to override this value. So far a NIS that does this hasn't been observed, but the capability is there.\r\nMiddleGrayValue = 0.14\r\n\r\n# Set this to a value greater than zero to force a constant luminance level. May offer a very slight speedup.\r\n# Setting this to 1.0 and MiddleGrayValue to 0.62 should offer roughly the same constant luminance as PC.\r\nForcedLuminance = 0.0\r\n"
+    }
+   ],
+   "ini": [
+    {
+     "file": "scripts/NFSMWFEShadows.ini",
+     "values": {
+      "RestoreShadows": "1"
+     }
+    },
+    {
+     "file": "scripts/NFSMWHDReflections.ini",
+     "values": {
+      "CubemapBrightnessFix": "0",
+      "ForceEnableMirror": "0",
+      "RestoreWaterReflections": "1"
+     }
+    }
+   ],
+   "expect": {
+    "scripts/X360Stuff.ini": "b518c78dd9e7f5765bb2079084028dfe9c84f29bdaf0df8b6282a9a9d6708d2b",
+    "scripts/NFSMWFEShadows.ini": "319ef646a6051a7b32b12e93f706e0cd7956d163e917bb836eb4c2082e26e564",
+    "scripts/NFSMWHDReflections.ini": "50b72efbb5c0a13ae91698fee9ee93d2bf020656d5b168519e257475933ea9e7"
+   },
+   "dll_overrides": ";d3dx9_26,d3dx9_43=n"
+  }
+ ],
+ "upgrades": [
+  {
+   "from": "1.2",
+   "source": "upgrade-1.2"
+  }
+ ]
+}
