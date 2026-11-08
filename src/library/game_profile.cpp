@@ -275,6 +275,12 @@ bool install_profile(const std::string &profiles, const GameProfile &profile,
     const auto original = list;
     if (!list_add(list, file, after, error))
         return false;
+    // A console with no other prospero-win game has no profiles folder yet.
+    if (!hui::save::ensure_directory(profiles))
+    {
+        error = "Can't make " + profiles;
+        return false;
+    }
     // The profile before its line, so the launcher never lists a file that isn't there.
     if (auto failed = hui::save::write_atomic(profiles + "/" + file, text); !failed.empty())
     {

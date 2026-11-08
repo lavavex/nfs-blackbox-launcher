@@ -134,6 +134,11 @@ int main()
     assert(!fs::exists(profiles / "pb-mw.profile") &&
            read(profiles / "profiles.lst") == "minesweeper.profile\npinball.profile\n");
     assert(remove_profile(profiles.string(), "pb-mw", error));
+    // A fresh console: the profiles folder is made, not assumed.
+    const auto fresh = profiles / "profiles";
+    assert(install_profile(fresh.string(), most_wanted(), "", error));
+    assert(read(fresh / "profiles.lst") == "nfs-most-wanted-2005.profile\n" &&
+           fs::exists(fresh / "nfs-most-wanted-2005.profile"));
     fs::remove_all(profiles);
     // [debug] env: the performance overlay, as prospero-win takes it; never with show_fps.
     {
